@@ -9,7 +9,6 @@
 
             int sum1 = calculator.Add(5, 10);
             int sum2 = calculator.Add(1, 2, 3);
-            double sum3 = calculator.Add(4.5, 5.5);
 
             Console.WriteLine($"Sum of 5 and 10: {sum1}");      
             Console.WriteLine($"Sum of 1, 2, and 3: {sum2}");  
