@@ -15,15 +15,30 @@
             //Console.WriteLine($"Sum of 4.5 and 5.5: {sum3}");
             #endregion
             #region q2
-            Rectangle rect1 = new Rectangle();
-            Rectangle rect2 = new Rectangle(10, 20);
-            Rectangle rect3 = new Rectangle(15);
-   
-            rect1.DisplayDimensions();
-            rect2.DisplayDimensions(); 
-            rect3.DisplayDimensions(); 
+            //Rectangle rect1 = new Rectangle();
+            //Rectangle rect2 = new Rectangle(10, 20);
+            //Rectangle rect3 = new Rectangle(15);
+
+            //rect1.DisplayDimensions();
+            //rect2.DisplayDimensions();
+            //rect3.DisplayDimensions();
+
+
+            #endregion
+            #region q3
+            ComplexNumber c1 = new ComplexNumber(4.2, 3.5);
+            ComplexNumber c2 = new ComplexNumber(2.1, 1.7);
+
+            ComplexNumber sum = c1 + c2;
+            ComplexNumber difference = c1 - c2;
+
+            Console.WriteLine($"c1: {c1}");
+            Console.WriteLine($"c2: {c2}");
+            Console.WriteLine($"Sum: {sum}");
+            Console.WriteLine($"Difference: {difference}");
+            #endregion
         }
-        #endregion
     }
+} 
     
-}
+
