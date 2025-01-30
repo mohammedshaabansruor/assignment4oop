@@ -52,18 +52,32 @@
             //duration.DisplayDuration();
             #endregion
             #region 2
-            Duration duration1 = new Duration(2, 30, 45);
-            Duration duration2 = new Duration(2, 30, 45);
-            Duration duration3 = new Duration(1, 15, 30);
+            //Duration duration1 = new Duration(2, 30, 45);
+            //Duration duration2 = new Duration(2, 30, 45);
+            //Duration duration3 = new Duration(1, 15, 30);
 
-            Console.WriteLine(duration1.ToString()); 
-            
-            Console.WriteLine(duration1.Equals(duration2)); 
-            Console.WriteLine(duration1.Equals(duration3)); 
+            //Console.WriteLine(duration1.ToString()); 
 
-            Console.WriteLine(duration1.GetHashCode()); 
-            Console.WriteLine(duration2.GetHashCode()); 
-            Console.WriteLine(duration3.GetHashCode()); 
+            //Console.WriteLine(duration1.Equals(duration2)); 
+            //Console.WriteLine(duration1.Equals(duration3)); 
+
+            //Console.WriteLine(duration1.GetHashCode()); 
+            //Console.WriteLine(duration2.GetHashCode()); 
+            //Console.WriteLine(duration3.GetHashCode()); 
+
+            #endregion
+            #region 3
+            Duration D1 = new Duration(1, 10, 15);
+            Console.WriteLine(D1.ToString()); 
+
+            Duration D2 = new Duration(3600);
+            Console.WriteLine(D2.ToString()); 
+
+            Duration D3 = new Duration(7800);
+            Console.WriteLine(D3.ToString()); 
+
+            Duration D4 = new Duration(666);
+            Console.WriteLine(D4.ToString()); 
             #endregion
             #endregion
         }

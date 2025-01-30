@@ -16,16 +16,14 @@ namespace assignment4oop
             Hours = hours;
             Minutes = minutes;
             Seconds = seconds;
+            
         }
         public void DisplayDuration()
         {
             Console.WriteLine($"Duration: {Hours} hours, {Minutes} minutes, {Seconds} seconds");
         }
 
-        public override string ToString()
-        {
-            return $"Duration: {Hours} hours, {Minutes} minutes, {Seconds} seconds";
-        }
+       
         public override bool Equals(object obj)
         {
             if (obj == null || GetType() != obj.GetType())
@@ -39,6 +37,32 @@ namespace assignment4oop
         public override int GetHashCode()
         {
             return HashCode.Combine(Hours, Minutes, Seconds);
+        }
+        //************************************************
+        public Duration(int totalSeconds)
+        {
+            Hours = totalSeconds / 3600;
+            totalSeconds %= 3600;
+            Minutes = totalSeconds / 60;
+            Seconds = totalSeconds % 60;
+        }
+        private void Normalize()
+        {
+            if (Seconds >= 60)
+            {
+                Minutes += Seconds / 60;
+                Seconds %= 60;
+            }
+
+            if (Minutes >= 60)
+            {
+                Hours += Minutes / 60;
+                Minutes %= 60;
+            }
+        }
+        public override string ToString()
+        {
+            return $"Hours: {Hours}, Minutes: {Minutes}, Seconds: {Seconds}";
         }
     }
 }
