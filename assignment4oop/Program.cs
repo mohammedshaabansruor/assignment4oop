@@ -26,16 +26,22 @@
 
             #endregion
             #region q3
-            ComplexNumber c1 = new ComplexNumber(4.2, 3.5);
-            ComplexNumber c2 = new ComplexNumber(2.1, 1.7);
+            //ComplexNumber c1 = new ComplexNumber(4.2, 3.5);
+            //ComplexNumber c2 = new ComplexNumber(2.1, 1.7);
 
-            ComplexNumber sum = c1 + c2;
-            ComplexNumber difference = c1 - c2;
+            //ComplexNumber sum = c1 + c2;
+            //ComplexNumber difference = c1 - c2;
 
-            Console.WriteLine($"c1: {c1}");
-            Console.WriteLine($"c2: {c2}");
-            Console.WriteLine($"Sum: {sum}");
-            Console.WriteLine($"Difference: {difference}");
+            //Console.WriteLine($"c1: {c1}");
+            //Console.WriteLine($"c2: {c2}");
+            //Console.WriteLine($"Sum: {sum}");
+            //Console.WriteLine($"Difference: {difference}");
+            #endregion
+            #region q4
+            Employee employee = new Employee();
+            employee.Work();
+           Manager manager = new Manager();
+            manager.Work();
             #endregion
         }
     }
