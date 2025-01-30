@@ -21,5 +21,24 @@ namespace assignment4oop
         {
             Console.WriteLine($"Duration: {Hours} hours, {Minutes} minutes, {Seconds} seconds");
         }
+
+        public override string ToString()
+        {
+            return $"Duration: {Hours} hours, {Minutes} minutes, {Seconds} seconds";
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            Duration other = (Duration)obj;
+            return Hours == other.Hours && Minutes == other.Minutes && Seconds == other.Seconds;
+        }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Hours, Minutes, Seconds);
+        }
     }
 }
