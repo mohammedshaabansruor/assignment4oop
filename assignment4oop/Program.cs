@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            #region part1
             #region q1
             //Calculator calculator = new Calculator();
             //int sum1 = calculator.Add(5, 10);
@@ -38,10 +39,17 @@
             //Console.WriteLine($"Difference: {difference}");
             #endregion
             #region q4
-            Employee employee = new Employee();
-            employee.Work();
-           Manager manager = new Manager();
-            manager.Work();
+            // Employee employee = new Employee();
+            // employee.Work();
+            //Manager manager = new Manager();
+            // manager.Work();
+            #endregion
+            #endregion
+            #region part 2
+            #region 1 
+            Duration duration = new Duration(2, 30, 45);
+            duration.DisplayDuration();
+            #endregion
             #endregion
         }
     }
